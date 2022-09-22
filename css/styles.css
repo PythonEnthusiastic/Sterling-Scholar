@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@keyframes jump {
+  50% {
+    transform: translate(0%, -50%);
+  }
+  55% {
+    transform: translate(0%, -50%) rotate(5deg);
+  }
+  60% {
+    transform: translate(0%, -50%) rotate(-5deg);
+  }
+  65% {
+    transform: translate(0%, -50%) rotate(5deg);
+  }
+  70% {
+    transform: translate(0%, -50%) rotate(-5deg);
+  }
+}
+html, body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.jumbotron-fluid:first-child {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.jumbotron-fluid * {
+  color: white;
+}
+
+.jumbotron-fluid i, .jumbotron-fluid .row p {
+  font-weight: 100;
+  display: inline-block;
+}
+
+.jumbotron-fluid .row {
+  width: 100%;
+}
+
+.jumbotron-fluid .row .col-4 {
+  border-right: 1px #f1f3f6 solid;
+}
+
+.col-4, .col-4 a {
+  font-size: 9px;
+  text-decoration: none;
+}
+
+.col-4 a:hover {
+  color: white;
+}
+
+.jumbotron-fluid .row .col-4:last-child {
+  border-right: none;
+}
+
+.content {
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  background-color: #333333;
+}
+
+.content h2 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+hr {
+  margin: 10px 0;
+  border: 2.5px white solid;
+  width: 75px;
+  color: white;
+  background-color: white;
+}
+
+h5, h6 {
+  font-weight: bold;
+}
+
+.content .row:first-child, .content .skills {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 50px;
+}
+
+.content .skills {
+  background-color: #222222;
+}
+
+.skills h1 {
+  padding-top: 50px;
+}
+
+.skills .row .col-12 {
+  width: 400px;
+  height: 480px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  transition: 0.2s;
+}
+
+.skills .row .col-12:hover {
+  border: 1px white solid;
+}
+.skills .row .col-12:hover img {
+  animation: jump 1.2s;
+}
+
+.skills img {
+  width: 150px;
+  height: auto;
+}
+
+.skills .fit {
+  width: 200px;
+  height: 160px;
+}
+
+.skills .html-fit {
+  width: 170px;
+}
+
+.skills .row .col-12 {
+  text-align: center;
+}
+
+.skills .row .col-12 h2 {
+  margin: 0px;
+}
+
+.skills .row .col-12 img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  font-size: 1em;
+  margin: 10px 2px 20px 2px;
+  position: sticky;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-4, .col-4 a {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .skills .row .col-12 {
+    margin: 20px;
+  }
+  .col-4, .col-4 a {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
